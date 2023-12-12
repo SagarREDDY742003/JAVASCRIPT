@@ -4,6 +4,8 @@
 
 /*
 DATA TYPES
+
+premetive
 1. NUMBER ( 2^53 )
 2. BIGINT
 3. STRING => ""
@@ -20,3 +22,27 @@ console.log(typeof a);//number
 console.log(typeof name);//string
 console.log(typeof null); //object
 console.log(typeof undefined);//undefined
+
+/* REFERENCE (Non Premitive)------------------
+1. Array []
+const heros = ["IronMan","Thor","Hulk"];
+
+2. Objects {}
+let myoby = {
+    name:"sagar",
+    age:20
+}
+
+3.Functions
+const myFunction = function(){
+    console.log("hello");
+}
+ */
+
+
+/**************MEMORY TYPES*************************/
+
+// stack(premitive), Heap(non-premitive)
+
+
+
