@@ -53,6 +53,7 @@ console.log(marvel[3][1]);//batman
 const heros = marvel.concat(dc);
 console.log(heros);//[ 'ironman', 'thor', 'hulk', 'flash', 'batman', 'superman' ]
 
+// spread operator
 const all_heros = [...marvel, ...dc]
 console.log(all_heros);//[ 'ironman', 'thor', 'hulk', 'flash', 'batman', 'superman' ]
 
