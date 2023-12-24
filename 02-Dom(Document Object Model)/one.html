@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: #0f0f0f;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-black">
+        <h1 id="title" class="heading">Dom Learning <span style="display: none;">sagar</span></h1>
+        <h2>Hello</h2>
+        <h2>world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nulla quasi perferendis voluptatum qui laborum suscipit aperiam amet? In recusandae rerum natus molestias, eligendi exercitationem consectetur pariatur et deserunt voluptatem?</p>
+        <input type="password" id="sagar">
+        <ul>
+            <li class="list">one</li>
+            <li  class="list">two</li>
+            <li class="list">three</li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("title").style.color = "red";
+        /*
+        let a = document.getElementById("title").innerHTML;
+        console.log(a);
+        Dom Learning <span style="display: none;">sagar</span> 
+        */
+        /*
+        let b = document.getElementById("title").innerText;
+        console.log(b);
+        Dom Learning
+        */
+        /*
+        let c = document.getElementById("title").textContent;
+        console.log(c);
+        Dom Learning sagar
+        */
+       let d = document.querySelector('h2');
+       console.log(d);//<h2>Hello</h2>
+
+       let u = document.querySelector('ul');
+       u.querySelector('li');
+       let g = u.querySelector('li')
+       g.style.backgroundColor = 'white';
+
+       let nodelist = document.querySelectorAll('li');
+       console.log(nodelist);//NodeList(3) [li.list, li.list, li.list]
+       nodelist[0].style.color = 'red';
+       
+       //conversion of HTML collection into array
+       let temp = document.getElementsByClassName('list');
+       console.log(temp)// HTMLCollection(3) [li.list, li.list, li.list]
+       const a = Array.from(temp);
+       console.log(a);// [li.list, li.list, li.list]
+    </script>
+</body>
+</html>
